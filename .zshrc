@@ -16,4 +16,7 @@ alias grep="grep --color=auto"
 alias vim="nvim"
 alias hypr="vim ~/.config/hypr/hyprland.conf"
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 eval "$(starship init zsh)"
