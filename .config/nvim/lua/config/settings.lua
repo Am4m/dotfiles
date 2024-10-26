@@ -1,6 +1,15 @@
 local opt = vim.opt
 
-vim.cmd("highlight LineNr guifg=#c0c0c0")
+-- Auto format after pasting text
+vim.api.nvim_create_autocmd("TextYankPost", {
+    pattern = "*",
+    callback = function()
+        if vim.v.event.operator == 'p' then -- Check if the operation was a paste
+            vim.lsp.buf.format({ async = true })
+        end
+    end,
+})
+vim.opt.clipboard = "unnamedplus"
 
 opt.number = true
 opt.relativenumber = true
@@ -19,8 +28,9 @@ opt.hlsearch = true
 opt.incsearch = true
 
 opt.termguicolors = true
-opt.scrolloff = 8
-opt.updatetime = 100
+opt.scrolloff = 4
+opt.updatetime = 50
+opt.isfname:append("@-@")
 
 opt.title = true
 opt.mouse = "a"
