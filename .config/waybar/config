@@ -5,7 +5,7 @@
 		"margin": "0 10 5 10",
 		// "width": 1280, // Waybar width
 		// Choose the order of the modules
-		"modules-left": ["custom/launcher", "hyprland/workspaces", "idle_inhibitor", "custom/pacman"],
+		"modules-left": ["custom/power", "hyprland/workspaces", "idle_inhibitor", "custom/pacman", "hyprland/window"],
 		"modules-center": [],
 		"modules-right": [
 		"cpu",
@@ -108,7 +108,7 @@
             "car": " ",
             "default": [" ", " ", " "]
         },
-        "scroll-step": 5
+        "scroll-step": 3
     },
 
 	"memory": {
@@ -136,7 +136,12 @@
         "signal": 8,
         "max-length": 5,
         "min-length": 3
-    }
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
     //  "custom/notification": {
     //     "format": "{icon}",
     //     "format-icons": {
@@ -155,6 +160,7 @@
     //     "on-click": "swaync-client -t -sw",
     //     "on-click-right": "swaync-client -d -sw",
     //     "escape": true
-    // }
+    // },
+    
 
 }

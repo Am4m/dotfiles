@@ -1,5 +1,5 @@
 * {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Noto Sans", 'Font Awesome 6 Brands', 'Font Awesome 6 Free Solid';
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -25,6 +25,7 @@ window#waybar.hidden {
 #workspaces button {
   padding: 0 0.7em;
   color: #D8DEE9;
+  border-radius: 10px;
 }
 
 #workspaces button.active {
@@ -35,15 +36,13 @@ window#waybar.hidden {
 #workspaces button:hover {
   background: #415170;
   box-shadow: none;
-  font-size: 16px;
   border-radius: 10px;
 }
 
-#custom-launcher {
-  font-size: 22px;
-  padding-left: 10px;
-  padding-right: 5px;
-  background-color: #434C5E;
+#custom-power {
+  font-size: 18px;
+  padding: 0 .8rem;
+  background-color: #415170;
   border-radius: 10px;
   color: #D8DEE9;
 }
@@ -92,7 +91,7 @@ window#waybar.hidden {
 }
 
 #custom-pacman {
-  margin-left: .5rem;
+  margin: 0 0.7rem;
   padding: 0 .7rem;
   border-radius: 10px;
   background-color: #415170;
@@ -105,4 +104,16 @@ tooltip {
 
 tooltip label {
   color: #D8DEE9;
+}
+
+#window {
+  color: #D8DEE9;
+  font-weight: 500;
+  background-color: #415170;
+  border-radius: 10px;
+  padding: 0 .7rem;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
 }
