@@ -17,34 +17,32 @@ window#waybar.hidden {
 
 #workspaces {
   margin: 0 0.7rem;
-  border-radius: 10px;
-  background-color: #434C5E;
-  box-shadow: inset 0 -3px transparent;
 }
 
 #workspaces button {
-  padding: 0 0.7em;
-  color: #D8DEE9;
-  border-radius: 10px;
+  padding: 0 0.6em;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
+  border-radius: 0;
 }
 
 #workspaces button.active {
-  color: #fff;
-  background-color: #415170;
+  border-bottom: 3px solid #D0D0D0;
+  font-weight: bold;
+  border-radius: 0;
 }
 
 #workspaces button:hover {
-  background: #415170;
   box-shadow: none;
-  border-radius: 10px;
+  background-color: #4A4A4A;
+  border-radius: 0;
 }
 
 #custom-power {
-  font-size: 18px;
-  padding: 0 .8rem;
-  background-color: #415170;
-  border-radius: 10px;
-  color: #D8DEE9;
+  font-size: 17px;
+  padding: 0 .9rem;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
 }
 
 #cpu,
@@ -52,10 +50,9 @@ window#waybar.hidden {
 #tray,
 #clock {
   padding: 0 1rem;
-  margin-right: .5rem;
-  background-color: #415170;
-  border-radius: 10px;
-  color: #D8DEE9;
+  margin-right: .7rem;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
 }
 
 #clock {
@@ -63,57 +60,64 @@ window#waybar.hidden {
   margin-left: .5rem;
 }
 
-#tray {
-  background-color: #434C5E;
-}
-
 #battery,
-#wireplumber {
-  padding: 0 0.7rem;
-  background-color: #434C5E;
-  color: #D8DEE9;
+#wireplumber,
+#backlight {
+  padding: 0 .5rem;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
+}
+
+#backlight {
+  padding-left: 1rem;
 }
 
 #wireplumber {
-  border-radius: 10px 0 0 10px;
+  border-left: none;
+  border-right: none;
 }
 
 #battery {
-  border-radius: 0 10px 10px 0;
   padding-left: 0;
 }
 
 #idle_inhibitor {
   padding: 0 .7rem;
-  border-radius: 10px;
-  background-color: #415170;
-  color: #D8DEE9;
+  margin-right: .7rem;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
+}
+
+#power-profiles-daemon {
+  padding: 0 .9rem;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
 }
 
 #custom-pacman {
   margin: 0 0.7rem;
   padding: 0 .7rem;
-  border-radius: 10px;
-  background-color: #415170;
-  color: #D8DEE9;
+  color: #D0D0D0;
+  border-bottom: 3px solid #5A5A5A;
 }
 
 tooltip {
-  background-color: #415170;
+  background: #5A5A5a;
 }
 
 tooltip label {
-  color: #D8DEE9;
+  color: #D0D0D0;
+  padding: .3rem;
 }
 
 #window {
-  color: #D8DEE9;
+  color: #D0D0D0;
   font-weight: 500;
-  background-color: #415170;
-  border-radius: 10px;
   padding: 0 .7rem;
+  border-bottom: 3px solid #5A5A5A;
 }
 
 window#waybar.empty #window {
   background-color: transparent;
+  border: none;
 }
